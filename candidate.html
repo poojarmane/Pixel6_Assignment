@@ -1,0 +1,32 @@
+<html>
+    <head>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+	<script>
+		urlp=[];
+		s=location.toString().split('?');
+		s=s[1].split('&');
+		for(i=0;i<s.length;i++) {
+			u=s[i].split('=');
+			urlp[u[0]]=u[1];
+		}
+		console.log(urlp);
+
+document.getElementById("gender").value=urlp['gender'];
+	</script>
+	<script src="myScript.js">
+	
+    </script>
+    
+    </head>
+<body>
+<h1>Candidate Form</h1>
+Name:<input type =text id="uname" ><br><hr>
+gender:<input type =text id="gender" ><br><hr>
+address:<input type =text id="address" ><br><hr>
+email:<input type =text id="email" ><br><hr>
+phone no:<input type =text id="no" ><br>
+</body>
+</html>
